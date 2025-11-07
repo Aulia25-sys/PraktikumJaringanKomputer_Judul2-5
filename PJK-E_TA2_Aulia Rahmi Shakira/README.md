@@ -13,6 +13,7 @@ Ping dari PC-A ke PC-B sebelum konfigurasi
 Dapat dilihat dari gambar ini  bahwa ping gagal karena belum ada konfigurasi IP pada router. Router berfungsi sebagai penghubung antar jaringan (gateway). PC-A (192.168.1.x) dan PC-B (192.168.0.x) berada di subnet berbeda, jadi mereka tidak bisa saling berkomunikasi tanpa router. Saat router belum dikonfigurasi, tidak ada routing antar-subnet, sehingga paket ICMP dari PC-A tidak menemukan jalur ke PC-B.
 
 
+
 Ping dari PC-A ke PC-B setelah di konfigurasi
 
 <img width="448" height="205" alt="image" src="https://github.com/user-attachments/assets/b99ba2d8-a055-44ae-bd03-2a13fecf2220" />
@@ -28,6 +29,9 @@ Ping dari PC-B ke PC-A sebelum di konfigurasi
 Sama seperti sebelumnya, pada tahap awal router belum dikonfigurasi. Jadi PC-B pun tidak bisa mengirim paket ICMP ke PC-A karena gateway (router) belum aktif atau belum memiliki IP.
 Walaupun PC-B sudah terhubung secara fisik ke router, tidak ada rute logis untuk mencapai subnet 192.168.1.x, sehingga ping-nya timeout.
 
+
+Ping dari PC-B ke PC-A setelah dikonfigurasi
+
 <img width="453" height="204" alt="image" src="https://github.com/user-attachments/assets/ba314674-024e-441b-9f0d-b6d1559ae0f8" />
 
 Setelah konfigurasi router selesai dan kedua interface aktif (up/up), routing dua arah sudah berjalan. Router sekarang memiliki informasi lengkap tentang kedua jaringan dan dapat meneruskan paket dari PC-B ke PC-A maupun sebaliknya.
@@ -36,6 +40,7 @@ Port switch dan PC juga sudah aktif (lampu hijau), sehingga jalur komunikasi pen
 ---
 
 Link Youtube: https://youtu.be/GgW-JaHoR-A
+
 
 
 
